@@ -32,6 +32,10 @@ CTRL+ALT+L 			Reformat Code (Indent)
 ALT+F7				Find all Reference/Usages
 ```
 
+**Replace in Selection**
+1. Hightlight the desired selection
+2. `CTRL+R`
+
 Wrap the text on the current page rather than running off-screen.  This is useful for those run-on tutorial paragraphs.
 
 > Soft Wraps: View | Active Editor | Use Soft Wraps
