@@ -40,12 +40,6 @@ The following example demonstrates how to change the last 2 commmits (N=2).  **I
 	*Note:* Change the author with `git commit --amend --author="Brian Jones <brian.jones@geotoolkit.net>"`
 4. Cycle through the commits with `git rebase --continue` until complete
 
-### Changing the Author of the Last Commit ###
-
-Sometime, before `git review` will work correctly, the author may need to be changed to reflect the *geotoolkit.net* domain.  Use this command to ammend the latest commit.
-
-`git commit --amend --author="Author Name <email@address.com>"`
-
 ### Stashing ###
 
 ```
@@ -75,6 +69,10 @@ Ammend a commit from the command line without changing the message:
 Undo the previous ammend:
 
 `git reset --soft HEAD@{1}`
+
+Use this command to change the author of the previous commit:
+
+`git commit --amend --author="Author Name <email@address.com>"`
 
 ### File Changes Accross All Branches ###
 
