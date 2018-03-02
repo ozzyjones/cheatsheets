@@ -115,3 +115,11 @@ git config --global merge.tool meld
 git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
 git config --global mergetool.prompt false
 ```
+
+### Comparing Commits ###
+
+How to compare a file from a previous commit with the same file in the current working directory:
+
+`git diff <commit> <filepath>`
+
+> Note: Make sure to use the commit ID and not the change ID
