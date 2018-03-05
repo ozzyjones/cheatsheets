@@ -29,10 +29,6 @@ define(["helpers", "tutorialpagelogic", "jquery", ...], function(...) {
 });
 ```
 
-Example Code Block:
-
-
-
 
 > Replace any unorthodox code with this regex:
 
