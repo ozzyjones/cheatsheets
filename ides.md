@@ -32,6 +32,7 @@ CTRL+ALT+L 			Reformat Code (Indent)
 ALT+F7				Find all Reference/Usages
 ALT + ←             Move Back a Tab
 ALT + →             Move Forward a Tab
+ALT + INSERT		Create New File (in Current Directory)
 ```
 
 **Replace in Selection**
