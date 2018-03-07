@@ -30,6 +30,8 @@ CTRL,CTRL+CLICK 	Multiple Cursors
 HOLD ALT + CLICK 	Multiple Cursors
 CTRL+ALT+L 			Reformat Code (Indent)
 ALT+F7				Find all Reference/Usages
+ALT + ←             Move Back a Tab
+ALT + →             Move Forward a Tab
 ```
 
 **Replace in Selection**
