@@ -121,3 +121,13 @@ How to compare a file from a previous commit with the same file in the current w
 `git diff <commit> <filepath>`
 
 > Note: Make sure to use the commit ID and not the change ID
+
+### Branch Changes: Diff from Fork Point ###
+
+Get the _diff_ of all the changes that have been made on a branch.
+
+> Note: this example is simplified to the case where a **dev** branch was forked from the **master** branch and **dev** is currectly checked out.
+
+`git diff $(git merge-base --fork-point master)`
+
+See a more complete explanation of _diff_-ing a branch [here](https://stackoverflow.com/a/29813554)
