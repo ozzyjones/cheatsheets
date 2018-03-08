@@ -33,6 +33,7 @@ ALT+F7				Find all Reference/Usages
 ALT + ←             Move Back a Tab
 ALT + →             Move Forward a Tab
 ALT + INSERT		Create New File (in Current Directory)
+SHIFT + F6			Refactor a Variable Name
 ```
 
 **Replace in Selection**
