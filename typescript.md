@@ -18,3 +18,7 @@ Run the linting process with this command:
 `tslint -c tslint.json 'src/**/*.{ts,tsx}'`
 
 Instructions to install linting tools are [here](https://rjzaworski.com/2016/12/testing-typescript-with-jest)
+
+Automatically fix simple errors:
+
+`tslint --fix -c ./config/tslint.json 'src/**/*{.ts,.tsx}'`
