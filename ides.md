@@ -44,7 +44,20 @@ Wrap the text on the current page rather than running off-screen.  This is usefu
 
 > Soft Wraps: View | Active Editor | Use Soft Wraps
 
-#### Install WebStorm Plugins ###
+#### WebStorm Plugins ###
+
+Plugins Menu:
+
+`CTRL + ALT + S`
+
+ESLint Plugin:
+
+Navigate to the following directory from the plugins menu:
+> Languages and Frameworks | JavaScript | Code Quality Tools | ESLint
+
+More information on [enabling and disabling the ESLint plugin](https://www.jetbrains.com/help/webstorm/eslint.html)
+
+#### Installing WebStorm Plugins ####
 
 Example:
 1. Download the plugin to close tabs to the left and the right [here](https://plugins.jetbrains.com/plugin/8179-close-editor-tabs-left-right)
