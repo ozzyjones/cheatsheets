@@ -20,6 +20,14 @@ F12						Goto Definition
 SHIFT + F12				Find all references
 ```
 
+#### VSCode Plugins ####
+
+**open in browser** by _TechER_
+```
+ALT + B					Open Chrome Tab
+ALT + SHIFT + B			Open Tab (with Browser Selection Menu)
+```
+
 ### WebStorm (IDE) ###
 
 ```
