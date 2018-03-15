@@ -119,6 +119,13 @@ To get JSLint to try to fix its own problems, add this line:
 `fix: true`
 after "format" in the end of *Gruntfile.js*
 
+### Font ###
+
+How to change the font set:
+1. Navigate to [fontello.com](http://fontello.com/)
+2. Drag `html5/Utils/3rdparty/fonts/geotoolkit.svg` onto the webpage and your icons will appear. 
+3. Include any new, desired icons in your webfont
+4. Download the webfont
 
 ### Tutorial ###
 
