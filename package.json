@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ozzyjones/cheatsheets/issues"
   },
-  "homepage": "https://github.com/ozzyjones/cheatsheets#readme"
+  "homepage": "https://github.com/ozzyjones/cheatsheets#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-markdownlint": "^1.1.1"
+  }
 }
