@@ -1,0 +1,19 @@
+{
+  "name": "cheatsheets",
+  "version": "0.0.1",
+  "description": "General Tips & Tricks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozzyjones/cheatsheets.git"
+  },
+  "author": "Brian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozzyjones/cheatsheets/issues"
+  },
+  "homepage": "https://github.com/ozzyjones/cheatsheets#readme"
+}
