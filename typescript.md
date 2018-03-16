@@ -30,15 +30,15 @@ I had a little trouble setting up Jest with Typescript so I recommend following 
 
 > Note: When installing on a Windows system, make sure to use the administrator command prompt.  Using a bash terminal on Windows just didn't seem to work right.
 
-**Installation**
+### Installation ###
 
-Run this command to install ts-jest: 
+Run this command to install ts-jest:
 `npm install --save-dev ts-jest @types/jest`
 
-Use this command if jest is not already installed: 
+Use this command if jest is not already installed:
 `npm install --save-dev jest ts-jest @types/jest`
 
-**package.json**
+### package.json ###
 
 Add a 'jest' section to the _package.json_ file.
 
@@ -47,7 +47,6 @@ Also, set the "test" attribute in the "scripts" section to "jest" so that testin
 ```json
 {
   "...": "...",
-  
   "jest": {
     "transform": {
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
@@ -63,7 +62,6 @@ Also, set the "test" attribute in the "scripts" section to "jest" so that testin
     ]
   },
   "...": "...",
-  
   "scripts": {
     "test": "jest"
   },
@@ -98,7 +96,7 @@ The resulting file structure will look something like this:
 └── tslint.json
 ```
 
-**Useful Links for Setting Up Jest with Typescript**
+### Useful Links for Setting Up Jest with Typescript ###
 
 * [Testing TypeScript with Jest](https://rjzaworski.com/2016/12/testing-typescript-with-jest)
 * [NPM ts-jest](https://www.npmjs.com/package/ts-jest)

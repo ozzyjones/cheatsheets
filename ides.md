@@ -1,15 +1,20 @@
 IDE's
------
+=====
 
-### Sublime ###
+Sublime
+-------
 
-* Goto Line and Column
-	1. `CTRL+G`
-	2. `:<line>:<column>`
+Goto Line and Column:
 
-`CTRL+SHIFT+K 		# Delete Line`
+1. `CTRL+G`
+2. `:<line>:<column>`
 
-### Visual Studio Code (VSCode) ###
+```
+CTRL+SHIFT+K 		# Delete Line
+```
+
+Visual Studio Code (VSCode)
+---------------------------
 
 ```
 CTRL + ALT + ↑			Multiple Cursors
@@ -20,15 +25,17 @@ F12						Goto Definition
 SHIFT + F12				Find all references
 ```
 
-#### VSCode Plugins ####
+### VSCode Plugins ###
 
 **open in browser** by _TechER_
+
 ```
 ALT + B					Open Chrome Tab
 ALT + SHIFT + B			Open Tab (with Browser Selection Menu)
 ```
 
-### WebStorm (IDE) ###
+WebStorm (IDE)
+--------------
 
 ```
 CTRL+B 			Navigate to Declaration (e.g. Function Definition)
@@ -44,7 +51,8 @@ ALT + INSERT		Create New File (in Current Directory)
 SHIFT + F6			Refactor a Variable Name
 ```
 
-**Replace in Selection**
+### Replace in Selection ###
+
 1. Hightlight the desired selection
 2. `CTRL+R`
 
@@ -52,7 +60,7 @@ Wrap the text on the current page rather than running off-screen.  This is usefu
 
 > Soft Wraps: View | Active Editor | Use Soft Wraps
 
-#### WebStorm Plugins ###
+### WebStorm Plugins ###
 
 Plugins Menu:
 
@@ -68,5 +76,6 @@ More information on [enabling and disabling the ESLint plugin](https://www.jetbr
 #### Installing WebStorm Plugins ####
 
 Example:
+
 1. Download the plugin to close tabs to the left and the right [here](https://plugins.jetbrains.com/plugin/8179-close-editor-tabs-left-right)
 2. Follow the steps outlined [here](https://www.jetbrains.com/help/webstorm/installing-a-plugin-from-the-disk.html) to finish installing the plugin

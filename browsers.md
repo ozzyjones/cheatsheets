@@ -1,4 +1,8 @@
-### Chrome ###
+Browsers
+========
+
+Chrome
+------
 
 ```
 CTRL + W            Close Tab

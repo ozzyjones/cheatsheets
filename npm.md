@@ -5,7 +5,8 @@ Interactively create a package.json file:
 
 `npm init`
 
-### Install the Latest (Stable) Node ###
+Install the Latest (Stable) Node
+--------------------------------
 
 This is how to install the latest stable version of Node on a Linux system.
 

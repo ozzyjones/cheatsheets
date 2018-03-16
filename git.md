@@ -1,7 +1,8 @@
 Git Stuff
----------
+=========
 
-### Squashing ###
+Squashing
+---------
 
 Squash multiple commits from a feature branch into a single commit on the *master* branch.
 
@@ -9,7 +10,8 @@ Squash multiple commits from a feature branch into a single commit on the *maste
 2. `git merge --squash <feature brach>`
 3. Commit the all of the changes into a singlel commit (e.g. `git commit`)
 
-### Excluding Files ###
+Excluding Files
+---------------
 
 Excluding files is like ignoring but it only affects files that are on the current system and will not cause any edits that would be undesireable in the .gitignore file.
 
@@ -18,29 +20,32 @@ Excluding files is like ignoring but it only affects files that are on the curre
 3. Exit the editor be typing "exclude"
 4. Refresh Index `git update-index --assume-unchanged [<file>...]`
 
-### Rebasing ###
+Rebasing
+--------
 
 1. Checkout the feature branch with the latest changes
 2. Use rebase to put the changes onto master `git rebase master`
 
-**Aborting a Rebase**
+### Aborting a Rebase ###
 
 ```
 git rebase --abort
 git rebase --quit		# Last Resort (will not undo what has already been done)
 ```
 
-#### Changing the Last N-Commits ####
+### Changing the Last N-Commits ###
 
 The following example demonstrates how to change the last 2 commmits (N=2).  **Important Note:** The commit history will be *changed*.  The commits will be re-written so don't do this on stuff that is already on the server.  See reference documentation [here][rebase-interactive]
 
 1. `git rebase -i HEAD~2`
 2. Change the line prefixes from "pick" to "edit" for the desired commits
 3. `git commit --amend` to do a general amend
-	*Note:* Change the author with `git commit --amend --author="Brian Jones <brian.jones@geotoolkit.net>"`
 4. Cycle through the commits with `git rebase --continue` until complete
 
-### Stashing ###
+> Note: Change the author in an amend with `git commit --amend --author="Brian Jones <brian.jones@geotoolkit.net>"`
+
+Stashing
+--------
 
 ```
 git stash 			# Stash Changes
@@ -48,19 +53,22 @@ git stash drop		# Delete the top stashed element
 git stash clear		# Delete all elements from the stash
 ```
 
-### Unstage ###
+Unstage
+-------
 
 Remove a currently staged file from the index.
 
 `git reset filename.txt`
 
-### Empty Commit ###
+Empty Commit
+------------
 
 Set the *allow-empty* flag to allow a blank commit to be committed.
 
 `git commit --allow-empty -m "Commit Message"`
 
-### Amending ###
+Amending
+--------
 
 Ammend a commit from the command line without changing the message:
 
@@ -74,21 +82,25 @@ Use this command to change the author of the previous commit:
 
 `git commit --amend --author="Author Name <email@address.com>"`
 
-### File Changes Accross All Branches ###
+File Changes Accross All Branches
+---------------------------------
 
 `gitk --all <path to file>`
 
-### Discard Current Changes ###
+Discard Current Changes
+-----------------------
 
 `git checkout -- .`
 
-### Branch Information (Verbose) ###
+Branch Information (Verbose)
+----------------------------
 
 This will display verbose branch information which is particularily useful for know what remote branches are being tracked by local branches.
 
 `git branch -vv`
 
-### Copy File to Another Branch ###
+Copy File to Another Branch
+---------------------------
 
 In this example I want to copy a file from the _dev_ branch into another branch, like _master_
 
@@ -99,11 +111,13 @@ In this example I want to copy a file from the _dev_ branch into another branch,
 
 See [here](http://firas.bessadok.com/git-copy-a-file-from-one-branch-to-another/) for more info.
 
-### Difftool/Mergetool (Meld) ###
+Difftool/Mergetool (Meld)
+-------------------------
 
 How to set [Meld](https://stackoverflow.com/a/43238372) as the GIT difftool and mergetool.
 
 For Windows:
+
 ```
 git config --global diff.tool meld
 git config --global difftool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
@@ -114,7 +128,8 @@ git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
 git config --global mergetool.prompt false
 ```
 
-### Comparing Commits ###
+Comparing Commits
+-----------------
 
 How to compare a file from a previous commit with the same file in the current working directory:
 
@@ -122,7 +137,8 @@ How to compare a file from a previous commit with the same file in the current w
 
 > Note: Make sure to use the commit ID and not the change ID
 
-### Branch Changes: Diff from Fork Point ###
+Branch Changes: Diff from Fork Point
+------------------------------------
 
 Get the _diff_ of all the changes that have been made on a branch.
 

@@ -8,7 +8,7 @@ FAQ
 
 Many using many dependecies in RequireJS, ESLint may complain about the maximum number of parameters for code like this:
 
-**Problem**
+#### Problem ####
 
 ```js
 define([
@@ -23,7 +23,7 @@ define([
 });
 ```
 
-**Solution #1**
+#### Solution #1 ####
 
 ```js
 define([
@@ -38,7 +38,7 @@ define([
 });
 ```
 
-**Solution #2**
+#### Solution #2 ####
 
 ```js
 define(function(require) {

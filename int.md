@@ -1,10 +1,10 @@
 Tutorial Notes
 ==============
 
-Well Log
+Code Snippets
 --------
 
-#### See More/Less Code ####
+### See More/Less Code ###
 
 See example in *piechart.js* tutorial
 
@@ -21,7 +21,7 @@ See example in *piechart.js* tutorial
 </div>
 ```
 
-* Define *tutorialpagelogic* and *jquery* in page requirements 
+* Define *tutorialpagelogic* and *jquery* in page requirements
 
 ```js
 define(["helpers", "tutorialpagelogic", "jquery", ...], function(...) {
@@ -29,22 +29,18 @@ define(["helpers", "tutorialpagelogic", "jquery", ...], function(...) {
 });
 ```
 
-
 > Replace any unorthodox code with this regex:
 
 `/See More Code[^<]*/See More Code.../`
 
 This will grab everything up until the first bracket.
 
-
-
-
 INT
 ---
 
 ### General ###
 
-**Steps for Changes**
+#### Steps for Changes ####
 
 1. Create a feature branch from master
 2. When happy, run `grunt lint` and create a commit for the changes
@@ -72,45 +68,37 @@ grunt all --slimdist		# Skip building JSDoc API
 grunt cleanup:all 			# Clean
 ```
 
-**Note:** To get a list of the modules, type in an incorrect module.  
-If you type in `grunt unittest:debug:xyz`, for example grunt will say it failed to load the module and 
-will provide a list of valid module names.
+**Note:** To get a list of the modules, type in an incorrect module.
+If you type in `grunt unittest:debug:xyz`, for example grunt will say it failed to load the module and will provide a list of valid module names.
 
-* *headers* category is not loading correctly
-	- Cannot load *geotoolkit*
+* 'headers' category is not loading correctly
+  + Cannot load *geotoolkit*
 
 ### Pushing a New Commit with Git Review ###
 
 1. Commit your desired change on the master branch
 2. Rebase your change(s) on top of newer changes (`git pull --rebase`)
-	* Error: *cannot pull with rebase: You have unstaged changes*
-		1. `git stash`
-	* If there is an error: *Cannot reabase onto multiple branches*
-		1. `git fetch`
-		2. `git rebase gerrit/master`
-
 3. Push to gerrit (`git review`)
 
 ### Cannot load geotookit ###
 
 The *debug* version of the build needs to be used instead.  When the *distribution* version of the build is used then all of the code is obfuscated and the tutorials will no longer run.
 
-**Debug**
+#### Debug ####
 
 ```grunt build:debug:all```
 
-**Distribution**
+#### Distribution ####
 
 ```grunt all``` => Equivalent to: ```grunt build:distribution:all```
 
-**Slim Distribution**
+#### Slim Distribution ####
 
 Use the slim distrubtion to save a lot of time but stop from building the JSDoc API documentation.
 
 example: ```grunt all --slimdist```
 
-
-**Run Unit Tests (Only)**
+#### Run Unit Tests (Only) ####
 `unittest:debug:all`
 
 ### Misc ###
@@ -122,15 +110,16 @@ after "format" in the end of *Gruntfile.js*
 ### Font ###
 
 How to change the font set:
+
 1. Navigate to [fontello.com](http://fontello.com/)
-2. Drag `html5/Utils/3rdparty/fonts/geotoolkit.svg` onto the webpage and your icons will appear. 
+2. Drag `html5/Utils/3rdparty/fonts/geotoolkit.svg` onto the webpage and your icons will appear.
 3. Include any new, desired icons in your webfont
 4. Download the webfont
 
 ### Tutorial ###
 
 * Note: what fonts are available?
-	- I searched in some of the most obvious places and couldn't find any font styles
+  + I searched in some of the most obvious places and couldn't find any font styles
 
 ### Suggestions for Tutorials ###
 
@@ -147,11 +136,8 @@ How to change the font set:
 Example:
 
 1. Use the geotookit.controls.unit_tests.html
-2. Open the page in the browser
-	* This will allow you to see the status of the unit tests
-3. Open *geotoolkit.controls.js* to use the Chrome debugger on the unit tests
-	* Note: watch out for obfuscation issues
-
+2. Open the page in the browser (This will allow you to see the status of the unit tests)
+3. Open *geotoolkit.controls.js* to use the Chrome debugger on the unit tests (Note: watch out for obfuscation issues)
 
 ### Copy Error ###
 
@@ -180,7 +166,8 @@ Compile Error: >> WARNING>>> LIBRARIES MAY NOT BE RENAMED AFTER A TEST FAILURE!
 
 > Try updating the associated *phantomtests.json* for the files that have been renamed
 
-**Running Grunt on My Documentation**
+#### Running Grunt on My Documentation ####
+
 ```
 npm install -g grunt-cli		# Install the command-line interface
 npm init						# Create Basic package.json
@@ -189,46 +176,43 @@ npm install grunt-contrib-jshint --save-dev		# Install plug-in (e.g. jshint)
 npm install grunt-markdown
 ```
 
-
-If build fails, try 
+If build fails, try
 `grunt cleanup:all`
 To remove old files
 
 Manually starting a Jenkins build:
+
 * Home >> Query and Trigger Gerrit Patches >> Search
 * Check the *Change Nr.* and click *Trigger Seleected*
 
-// Markdown
-https://github.com/treasonx/grunt-markdown
-
-// Plugins Links
-https://github.com/gruntjs
-
+Some Useful Grunt Links:
+[Grunt Markdown](https://github.com/treasonx/grunt-markdown)
+[Grunt Plugins](https://github.com/gruntjs)
 
 Opening the distribution version of the package locally
+
 ```
 cd C:\git\html5\GeoToolkitJS\lib
 npm install
 ```
 
-
 When resolving someone else's patch from server:
-1. Hard reset to the previous commit on the master branch (this can be either the remote branch or the local master; either one will work)
-**Note:** This is scary.  You will be deleting your local work but it should be safe inside of the server.
-2. Rebase the remote branch `git pull --rebase`
-*Your changes should be reflected in your local branch now*
 
+1. Hard reset[^1] to the previous commit on the master branch (this can be either the remote branch or the local master; either one will work)
+2. Rebase the remote branch `git pull --rebase`[^2]
+
+[^1]: This is scary.  You will be deleting your local work but it should be safe inside of the server.
+[^2]: Your changes should be reflected in your local branch now
 
 Warning: Unable to delete "GeoToolkitJS/lib" file (EBUSY: resource busy or locked, unlink 'C:\git\html5\GeoToolkitJS\lib'). Use --force to continue.
+
 1. Close BASH terminal
 2. Stop Server (Note: this server could be open from multiple sources: npm, VSCode, WebStorm, etc.)
-
 
 ### Accessing Built Documentatin ###
 
 1. Build Everything (`grunt build:distribution:all`)
 2. Open the index file (`GeoToolkitJS/lib/docs/index.html`)
-
 
 $ git pull
 Auto packing the repository in background for optimum performance.
