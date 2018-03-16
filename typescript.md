@@ -46,8 +46,8 @@ Also, set the "test" attribute in the "scripts" section to "jest" so that testin
 
 ```json
 {
-  // ...
-  // Jest Configuration
+  "...": "...",
+  
   "jest": {
     "transform": {
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
@@ -62,11 +62,12 @@ Also, set the "test" attribute in the "scripts" section to "jest" so that testin
       "node"
     ]
   },
-  // Create script to run test via 'npm test'
+  "...": "...",
+  
   "scripts": {
     "test": "jest"
   },
-  // ...
+  "...": "...",
 }
 ```
 
