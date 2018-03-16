@@ -1,7 +1,6 @@
 
 module.exports = function(grunt) {
 
-    // Project configuration.
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
       markdownlint: {
@@ -16,18 +15,13 @@ module.exports = function(grunt) {
             }
           },
           src: [
-            // 'README.md',
-            // '.github/*.md'
             '*.md'
           ]
         }
       }
     });
   
-    // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-markdownlint');
   
-    // Default task(s).
     grunt.registerTask('default', ['markdownlint']);
-  
   };
