@@ -35,6 +35,8 @@ git rebase --quit		# Last Resort (will not undo what has already been done)
 
 ### Changing the Last N-Commits ###
 
+#### Interactive Rebase ####
+
 The following example demonstrates how to change the last 2 commmits (N=2).  **Important Note:** The commit history will be *changed*.  The commits will be re-written so don't do this on stuff that is already on the server.  See reference documentation [here][rebase-interactive]
 
 1. `git rebase -i HEAD~2`
