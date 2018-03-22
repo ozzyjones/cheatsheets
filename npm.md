@@ -14,3 +14,26 @@ This is how to install the latest stable version of Node on a Linux system.
 sudo npm install n -g
 sudo n stable
 ```
+
+Package Version
+---------------
+
+### View Current Package Version ###
+
+View the version of the current package.
+
+```bash
+npm version
+```
+
+### Bump Current Package Version ###
+
+Bump the version number in _package.json_ and _package-lock.json_
+
+```bash
+npm version <version>
+```
+
+_example_: `npm version 1.0.1`
+
+> Note: with default settings, this will create a tag **v1.0.1** and a commit with **1.0.1**
