@@ -11,6 +11,7 @@ Goto Line and Column:
 
 ```
 CTRL+SHIFT+K 		# Delete Line
+ALT+F3          # Select all instances of a highlighted word
 ```
 
 Visual Studio Code (VSCode)
