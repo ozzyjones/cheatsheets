@@ -101,3 +101,12 @@ The resulting file structure will look something like this:
 * [Testing TypeScript with Jest](https://rjzaworski.com/2016/12/testing-typescript-with-jest)
 * [NPM ts-jest](https://www.npmjs.com/package/ts-jest)
 * [Getting Started with Jest](https://facebook.github.io/jest/docs/en/getting-started.html)
+
+Testing with Mocha, Chai
+------------------------
+
+### Installation ###
+
+`npm install chai mocha ts-node @types/chai @types/mocha --save-dev`
+
+See more about testing node applications with TypeScript with Mocha and Chai [here](https://journal.artfuldev.com/unit-testing-node-applications-with-typescript-using-mocha-and-chai-384ef05f32b2)
