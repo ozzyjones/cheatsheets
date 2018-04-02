@@ -46,6 +46,26 @@ The following example demonstrates how to change the last 2 commmits (N=2).  **I
 
 > Note: Change the author in an amend with `git commit --amend --author="Brian Jones <brian.jones@geotoolkit.net>"`
 
+##### Line Prefixes/Commands #####
+
+See the excerpt from the [git-rebase](https://git-scm.com/docs/git-rebase) documentation for the list of commands that can be used during an interactive rebase.
+
+> An editor will be fired up with all the commits in your current branch (ignoring merge commits), which come after the given commit. You can reorder the commits in this list to your heart’s content, and you can remove them. The list looks more or less like this:
+
+```
+pick deadbee The oneline of this commit
+pick fa1afe1 The oneline of the next commit
+...
+```
+
+| Command | Description |
+|---------|-------------|
+| pick    | do nothing to the selected commit
+| edit    | edit files and/or the commit message
+| reword  | edit the commit message, only
+| drop    | delete a commit
+| squash  | fold two or more commits into one (use only on **subsequent commits**)
+
 Stashing
 --------
 
