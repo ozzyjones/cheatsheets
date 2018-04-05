@@ -75,6 +75,31 @@ git stash drop		# Delete the top stashed element
 git stash clear		# Delete all elements from the stash
 ```
 
+Stage
+-----
+
+### Interactive Staging ###
+
+#### Stage a Hunk ####
+
+Stage hunks of code in patches with the `-p` flag.
+
+`git add -p`
+
+##### Options for Staging a Hunk #####
+
+| Option | Description |
+|--------|-------------|
+| y      | stage this hunk for the next commit
+| n      | do not stage this hunk for the next commit
+| q      | quit; do not stage this hunk or any of the remaining hunks
+| a      | stage this hunk and all later hunks in the file
+| d      | do not stage this hunk or any of the later hunks in the file
+| s      | split the current hunk into smaller hunks
+
+* How to [stage a hunk](https://stackoverflow.com/a/1085191)
+* See the official documentation on interactive staging [here](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
+
 Unstage
 -------
 
