@@ -24,6 +24,7 @@ CTRL + ALT + ↓			Multiple Cursors
 F2						Refactor Variable
 F12						Goto Definition
 SHIFT + F12				Find all references
+CTRL + D                Add selection to next Find match
 ```
 
 ### VSCode Plugins ###
