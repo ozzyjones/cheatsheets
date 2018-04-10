@@ -37,3 +37,11 @@ npm version <version>
 _example_: `npm version 1.0.1`
 
 > Note: with default settings, this will create a tag **v1.0.1** and a commit with **1.0.1**
+
+package.json
+------------
+
+### devDependencies vs dependencies ###
+
+* _devDependencies_ - modules which are only required during development
+* _dependencies_ - modules which are also required at runtime
