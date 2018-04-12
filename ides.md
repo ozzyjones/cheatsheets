@@ -53,6 +53,12 @@ ALT + INSERT		Create New File (in Current Directory)
 SHIFT + F6			Refactor a Variable Name
 ```
 
+### Reformat Code ###
+
+In the main menu select:
+
+> Code | Reformat Code
+
 ### Replace in Selection ###
 
 1. Hightlight the desired selection
