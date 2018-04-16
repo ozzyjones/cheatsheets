@@ -183,6 +183,14 @@ git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
 git config --global mergetool.prompt false
 ```
 
+### View the Diff for a Particular Commit ###
+
+This command will show the difference between that commit and its ancestor, where **COMMIT** is a particular commit hash:
+
+`git difftool COMMIT^ COMMIT`
+
+See the full solution [here](https://stackoverflow.com/a/17563740)
+
 Comparing Commits
 -----------------
 
