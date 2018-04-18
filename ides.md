@@ -59,6 +59,10 @@ In the main menu select:
 
 > Code | Reformat Code
 
+### Show Whitespaces ###
+
+> View | Active Editor | Show WhiteSpaces
+
 ### Replace in Selection ###
 
 1. Hightlight the desired selection
