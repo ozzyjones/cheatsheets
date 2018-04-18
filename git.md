@@ -150,9 +150,14 @@ Discard Current Changes
 Branch Information (Verbose)
 ----------------------------
 
-This will display verbose branch information which is particularily useful for know what remote branches are being tracked by local branches.
+`git branch [option]`
 
-`git branch -vv`
+| Option            | Description |
+|-------------------|-------------|
+| -l                | Local branch information
+| -r                | Remote branch information
+| -vv               | Verbose branch information (particularily useful for knowing what remote branches are being tracked by local branches)
+| -d [local_branch] | Delete local branch
 
 Copy File to Another Branch
 ---------------------------
