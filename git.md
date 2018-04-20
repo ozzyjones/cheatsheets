@@ -100,6 +100,16 @@ Stage hunks of code in patches with the `-p` flag.
 * How to [stage a hunk](https://stackoverflow.com/a/1085191)
 * See the official documentation on interactive staging [here](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
 
+Tagging
+-------
+
+| Command             | Description |
+|---------------------|-------------|
+| `git tag`           | List tags
+| `git tag [name]`    | Create a local tag
+| `git tag -d [name]` | Delete a local tag
+
+
 Resetting
 ---------
 
