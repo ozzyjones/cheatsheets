@@ -53,6 +53,12 @@ ALT + INSERT		Create New File (in Current Directory)
 SHIFT + F6			Refactor a Variable Name
 ```
 
+### Collapse All ###
+
+Collapse all code blocks:
+
+> CTRL + SHIFT + -
+
 ### Reformat Code ###
 
 In the main menu select:
