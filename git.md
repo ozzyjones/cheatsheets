@@ -119,6 +119,12 @@ Throw away any uncommitted changed and return to the state of the previous commi
 
 `git reset --hard HEAD`
 
+#### Discard Changes in a Single File ####
+
+This is the same result as discarding uncommitted changes for a single file (like a `git reset --hard` command).
+
+`git checkout HEAD -- my-file.txt`
+
 ### Unstage ###
 
 Remove a currently staged file from the index.
