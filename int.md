@@ -68,6 +68,12 @@ grunt all --slimdist		# Skip building JSDoc API
 grunt cleanup:all 			# Clean
 ```
 
+#### UMD ####
+
+Use the _UMD_ flag to generate files that can be used for the _jsToolkitWebDemos_ project.
+
+`grunt build:debug:all --umd=false`
+
 **Note:** To get a list of the modules, type in an incorrect module.
 If you type in `grunt unittest:debug:xyz`, for example grunt will say it failed to load the module and will provide a list of valid module names.
 
