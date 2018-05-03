@@ -131,6 +131,18 @@ Remove a currently staged file from the index.
 
 `git reset filename.txt`
 
+Reverting
+---------
+
+Revert the previous command with this command:
+
+`git revert HEAD`
+
+If the `--no-edit` flag is not used, Git Extensions will open an editor to make changes to the commit.
+To use the default message (e.g. 'Revert "My Last Message"') use this command:
+
+`git revert HEAD --no-edit`
+
 Empty Commit
 ------------
 
