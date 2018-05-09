@@ -15,6 +15,15 @@ sudo npm install n -g
 sudo n stable
 ```
 
+Uninstall
+---------
+
+This uninstalls a package, completely removing everything npm installed on its behalf.
+
+```bash
+sudo npm uninstall <package>
+```
+
 Package Version
 ---------------
 
