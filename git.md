@@ -1,6 +1,16 @@
 Git Stuff
 =========
 
+Logging
+-------
+
+Show commit logs:
+
+```
+git log
+git log --author="John Doe"     # Filter by author name
+```
+
 Squashing
 ---------
 
