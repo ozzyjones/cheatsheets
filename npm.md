@@ -54,3 +54,18 @@ package.json
 
 * _devDependencies_ - modules which are only required during development
 * _dependencies_ - modules which are also required at runtime
+
+Popular Packages
+----------------
+
+### [http-server](https://www.npmjs.com/package/http-server) ###
+
+Install globally with this command:
+
+`npm install http-server -g`
+
+The server can simply be started like this:
+
+`http-server [path] [options]`
+
+This package "magically" serves the _index.html_ file be default.
