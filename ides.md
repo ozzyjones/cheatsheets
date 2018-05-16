@@ -25,6 +25,7 @@ F2						Refactor Variable
 F12						Goto Definition
 SHIFT + F12				Find all references
 CTRL + D                Add selection to next Find match
+CTRL + T                Markdown files - search through headers in the current workspace
 ```
 
 ### VSCode Plugins ###
