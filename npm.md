@@ -83,3 +83,19 @@ The server can simply be started like this:
 `http-server [path] [options]`
 
 This package "magically" serves the _index.html_ file be default.
+
+### [jsdoc](https://www.npmjs.com/package/jsdoc) ###
+
+Install globally with this command:
+
+`npm install -g jsdoc`
+
+Generate JSDoc documentation for a single file like this:
+
+`jsdoc yourJavaScriptFile.js`
+
+By default, the results are placed in the `./out` directory.
+
+See more options with this command:
+
+`jsdoc --help`
