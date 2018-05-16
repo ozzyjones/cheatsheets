@@ -55,6 +55,20 @@ package.json
 * _devDependencies_ - modules which are only required during development
 * _dependencies_ - modules which are also required at runtime
 
+### List Installed Packages ###
+
+Navigate to the directory containing the _package.json_ file and run this command to see all the versions of packages that are installed.
+
+`npm ls` 
+-or- 
+`npm ls <package-name>`
+
+Use the `--gobal` flag to list all the globally (`-g`) installed packages.
+
+`npm ls --global`
+
+(e.g. `npm ls --global jsdoc` will only list the _jsdoc_ package - if it is installed)
+
 Popular Packages
 ----------------
 
