@@ -29,6 +29,15 @@ Reinstall Packages
 
 The easiest way to reinstall all packages is to delete the `node_modules` folder and execute `npm install`.
 
+Updating Packages
+-----------------
+
+| Command           | Description |
+|-------------------|-------------|
+|`npm update`       | Update all packages in _dependencies_
+|`npm update <pkg>` | Update specified package
+|`npm update --dev` | Use the `--dev` flag to cause _devDependencies_ to be proccessed as well
+
 Package Version
 ---------------
 
