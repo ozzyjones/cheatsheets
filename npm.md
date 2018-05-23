@@ -24,6 +24,11 @@ This uninstalls a package, completely removing everything npm installed on its b
 sudo npm uninstall <package>
 ```
 
+Reinstall Packages
+------------------
+
+The easiest way to reinstall all packages is to delete the `node_modules` folder and execute `npm install`.
+
 Package Version
 ---------------
 
