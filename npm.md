@@ -74,6 +74,25 @@ Use the `--gobal` flag to list all the globally (`-g`) installed packages.
 
 (e.g. `npm ls --global jsdoc` will only list the _jsdoc_ package - if it is installed)
 
+Package Version Specifiers
+--------------------------
+
+| Specifier | Meaning |
+|-----------|---------|
+|`~version` | Approximately equivalent to version (e.g. 3.9.*)
+|`^version` | Compatible with version (e.g. 3.*.*)
+|`version`  | Must match version exactly
+|`>version` | Greater than
+|`>=version`| Greater than or equal
+|`<version` | Less than
+|`<=version`| Less than or equal
+|`1.2.x`    | 1.2.*
+|`*`        | Any version
+|`latest`   | Obtains the latest version
+
+
+See more details [here](https://stackoverflow.com/a/25861938/9666775)
+
 Popular Packages
 ----------------
 
