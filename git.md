@@ -30,6 +30,12 @@ Excluding files is like ignoring but it only affects files that are on the curre
 3. Exit the editor be typing "exclude"
 4. Refresh Index `git update-index --assume-unchanged [<file>...]`
 
+### Untrack file that is now in .gitignore ###
+
+Make GIT forget about a file that was tracked but is now in _.gitignore_
+
+`git rm --cached <file>`
+
 Rebasing
 --------
 
