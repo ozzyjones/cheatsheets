@@ -99,3 +99,11 @@ By default, the results are placed in the `./out` directory.
 See more options with this command:
 
 `jsdoc --help`
+
+### [npm-check-updates (ncu)](https://www.npmjs.com/package/npm-check-updates) ###
+
+Show any new dependencies for the project in the current directory.
+
+`ncu`
+
+> Note: NPM also has a similar command installed natively - `npm outdated`
