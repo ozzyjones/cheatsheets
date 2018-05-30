@@ -27,6 +27,14 @@ Tell GIT which files to ignore from tracking.
 
 Find more information about _.gitignore_ files [here](https://help.github.com/articles/ignoring-files/)
 
+### Debugging Ignores ###
+
+Debug gitignore and exclude files.  
+
+In the following command, all of the path names provided will be checked to see if they are being ignored or excluded.  Use the `--verbose` flag to get more information.
+
+`git ignore [options] pathname...`
+
 Excluding Files
 ---------------
 
