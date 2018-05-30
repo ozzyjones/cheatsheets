@@ -20,6 +20,13 @@ Squash multiple commits from a feature branch into a single commit on the *maste
 2. `git merge --squash <feature brach>`
 3. Commit the all of the changes into a singlel commit (e.g. `git commit`)
 
+Ignoring Files
+--------------
+
+Tell GIT which files to ignore from tracking.
+
+Find more information about _.gitignore_ files [here](https://help.github.com/articles/ignoring-files/)
+
 Excluding Files
 ---------------
 
