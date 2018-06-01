@@ -106,6 +106,12 @@ git stash drop		# Delete the top stashed element
 git stash clear		# Delete all elements from the stash
 ```
 
+Saving a stash with a message:
+```console
+git stash push -m "My Message"
+git stash save "My Message"
+```
+
 Stage
 -----
 
