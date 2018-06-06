@@ -37,6 +37,10 @@ ALT + B					Open Chrome Tab
 ALT + SHIFT + B			Open Tab (with Browser Selection Menu)
 ```
 
+**[Unicode Latex](https://marketplace.visualstudio.com/items?itemName=oijaz.unicode-latex)** by _Omer Sheikh_
+
+Use the command `Unicode: Insert Math Symbol` to display a list of common symbols for insertion.
+
 WebStorm (IDE)
 --------------
 
