@@ -54,8 +54,21 @@ Make GIT forget about a file that was tracked but is now in _.gitignore_
 Rebasing
 --------
 
-1. Checkout the feature branch with the latest changes
-2. Use rebase to put the changes onto master `git rebase master`
+1. Checkout the feature branch with the latest changes (e.g. `git checkout dev`)
+2. Use rebase to put the changes onto master (e.g. `git rebase master`)
+
+Before:
+```
+a -- b -- c -- d      <-- master
+           \
+            e -- f    <-- dev
+```
+After:
+```
+a -- b -- c -- d
+                \
+                 e -- f    <-- dev, master
+```
 
 ### Aborting a Rebase ###
 
